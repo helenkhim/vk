@@ -1,76 +1,50 @@
 package domain;
 
 public class CommentInfo {
-    private int quantityComments;   //количетсво комментариев
-    private String commentText;     //текст комментария
-    private int dataAndTimeComment; //дата и время комментария
-    private int idAuthor;           //идетификатор автора комментария
-    private int can_post;           //информация о том, может ли текущий пользователь комментировать запись
-    private int groups_can_post;    //информация о том, могут ли сообщества комментировать запись
-    private boolean can_close;      //может ли текущий пользователь закрыть комментарии к записи
-    private boolean can_open;       //может ли текущий пользователь открыть комментарии к записи
+    private int count; //количество комментариев
+    private int canPost; //информация о том, может ли текущий пользователь комментировать запись
+    private int groupsCanPost; //информация о том, могут ли сообщества комментировать запись
+    private boolean canClose; //может ли текущий пользователь закрыть комментарии к записи
+    private boolean canOpen; //может ли текущий пользователь открыть комментарии к записи
 
-    public int getCan_post() {
-        return can_post;
+    public int getCount() {
+        return count;
     }
 
-    public void setCan_post(int can_post) {
-        this.can_post = can_post;
+    public void setCount(int count) {
+        this.count = count;
     }
 
-    public int getGroups_can_post() {
-        return groups_can_post;
+    public int getCanPost() {
+        return canPost;
     }
 
-    public void setGroups_can_post(int groups_can_post) {
-        this.groups_can_post = groups_can_post;
+    public void setCanPost(int canPost) {
+        this.canPost = canPost;
     }
 
-    public boolean isCan_close() {
-        return can_close;
+    public int getGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setCan_close(boolean can_close) {
-        this.can_close = can_close;
+    public void setGroupsCanPost(int groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public boolean isCan_open() {
-        return can_open;
+    public boolean isCanClose() {
+        return canClose;
     }
 
-    public void setCan_open(boolean can_open) {
-        this.can_open = can_open;
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
     }
 
-    public int getQuantityComments() {
-        return quantityComments;
+    public boolean isCanOpen() {
+        return canOpen;
     }
 
-    public void setQuantityComments(int quantityComments) {
-        this.quantityComments = quantityComments;
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 
-    public String getCommentText() {
-        return commentText;
-    }
-
-    public void setCommentText(String commentText) {
-        this.commentText = commentText;
-    }
-
-    public int getDataAndTimeComment() {
-        return dataAndTimeComment;
-    }
-
-    public void setDataAndTimeComment(int dataAndTimeComment) {
-        this.dataAndTimeComment = dataAndTimeComment;
-    }
-
-    public int getIdAuthor() {
-        return idAuthor;
-    }
-
-    public void setIdAuthor(int idAuthor) {
-        this.idAuthor = idAuthor;
-    }
 }
